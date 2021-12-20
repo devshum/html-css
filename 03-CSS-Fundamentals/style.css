@@ -71,3 +71,23 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
 }
+/* 
+.first-li {
+  font-weight: bold;
+} */
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+article p:first-child {
+  color: red;
+}
+
+article p:last-child {
+  color: red;
+}
