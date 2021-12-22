@@ -65,6 +65,11 @@ li {
   font-size: 16px;
 }
 
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
 .related {
   list-style: none;
 }
