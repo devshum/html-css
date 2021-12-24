@@ -86,7 +86,6 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
-  margin-bottom: 15px;
 }
 
 ul,
@@ -197,7 +196,6 @@ nav a:link {
   display: block; */
 
   margin-right: 30px;
-  margin-top: 10px;
   display: inline-block;
 }
 
@@ -266,48 +264,39 @@ nav p {
   font-size: 18px;
 } */
 
-/* FLOATS */
-.author-img {
-  float: left;
-  margin-bottom: 20px;
-}
-.author {
-  /* padding-left: 80px; */
-  float: left;
-  margin-top: 10px;
-  margin-left: 20px;
+/* FLEXBOX */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-h1 {
-  float: left;
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
 }
 
-nav {
-  float: right;
+.related-post {
+  display: flex;
+  align-items: center;
 }
 
-/* .clear {
-  clear: both;
-} */
-
-.clearfix::after {
-  content: '';
-  display: block;
-  clear: both;
+.related-post span {
+  margin-left: 16px;
 }
 
-article {
-  float: left;
-  width: 825px;
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 75px;
 }
 
-aside {
-  float: right;
-  width: 300px;
+.wrapper article {
+  flex: 1;
 }
 
-footer {
-  clear: both;
+.wrapper aside {
+  flex: 0 0 300px;
 }
-
-
