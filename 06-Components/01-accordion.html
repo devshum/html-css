@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Accordion Component</title>
+
+  <style>
+    /*
+    SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+    FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+    */
+
+    /* 
+    MAIN COLOR: #087f5b;
+    GREY COLOR: #343a40;
+    */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* ------------------------ */
+    /* GENERAL STYLES */
+    /* ------------------------ */
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1;
+    }
+
+    /* opened state styles */
+
+    .accordion.opened .accordion__title-wrap,
+    .accordion.opened .accordion__icon {
+      color: #087f5b;
+    }
+
+    .accordion.opened .accordion__icon {
+      transform: rotate(180deg);
+    }
+
+    .accordion.opened .accordion__content {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      grid-column-gap: 32px;
+    }
+
+    .accordion.opened .accordion__title-num {
+      opacity: 1;
+    }
+
+    .accordion.opened::before {
+      background-color: #087f5b;
+    }
+
+    /* general styles */
+
+    .accordion {
+      max-width: 700px;
+      margin: 100px auto;
+      box-shadow: 0 0 32px rgba(0,0,0,0.1);
+      padding: 24px;
+      position: relative;
+    }
+
+    .accordion::before {
+      content: '';
+      top: 0;
+      left: 0;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+    }
+
+    .accordion__header,
+    .accordion__title-wrap {
+      display: flex;
+    }
+
+    .accordion__header {
+      cursor: pointer;
+    }
+
+    .accordion__title-wrap,
+    .accordion__icon {
+      color: #000;
+    }
+
+    .accordion__title-wrap {
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .accordion__title-num {
+      display: inline-block;
+      margin-right: 32px;
+      width: 32px;
+      opacity: 0.6;
+    }
+
+    .accordion__icon {
+      width: 24px;
+      margin-left: auto;
+    }
+
+    .accordion__content {
+      display: none;
+      margin-top: 32px;
+    }
+
+    .accordion__content::before,
+    .accordion__content::after {
+      content: '';
+      width: 32px;
+    }
+
+    .accordion__paragraph,
+    .accordion__list {
+      grid-column: 2;
+    }
+
+    .accordion__paragraph {
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .accordion__list {
+      color: #868e96;
+      margin-left: 18px;
+    }
+
+    .accordion__list-item:not(:last-child) {
+      margin-bottom: 12px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <details class="accordion">
+    <summary class="accordion__header">
+      <h2 class="accordion__title-wrap">
+        <span class="accordion__title-num">02</span>
+        <span class="accordion__title-text">How long do I have to return my chair?</span>
+      </h2>
+  
+      <svg class="accordion__icon" 
+           xmlns="http://www.w3.org/2000/svg" 
+           fill="none" 
+           viewBox="0 0 24 24" 
+           stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </summary>
+
+    <div class="accordion__content">
+      <p class="accordion__paragraph">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis exercitationem quae similique expedita dolore odio nesciunt sed esse, ipsum odit, est quibusdam ad ratione enim fugit optio quod illum porro?
+      </p>
+
+      <ul class="accordion__list">
+        <li class="accordion__list-item">
+          Blanditiis exercitationem quae similique 
+        </li>
+        <li class="accordion__list-item">
+          Est quibusdam ad ratione enim fugit
+        </li>
+        <li class="accordion__list-item">
+          Odio nesciunt sed esse, ipsum odit
+        </li>
+        <li class="accordion__list-item">
+          Quibusdam ad ratione enim fugit optio quod illum porro
+        </li>
+      </ul>
+    </div>
+  </details>
+
+  <script>
+    const accordion = document.querySelector('.accordion');
+    const accordionHeader = document.querySelector('.accordion__header');
+
+    accordionHeader.addEventListener('click', () => accordion.classList.toggle('opened'));
+  </script>
+</body>
+
+</html>
