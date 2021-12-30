@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Hero Component</title>
+
+  <style>
+    /*
+    SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+    FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+    */
+
+    /* 
+    MAIN COLOR: #087f5b;
+    GREY COLOR: #343a40;
+    */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* ------------------------ */
+    /* GENERAL STYLES */
+    /* ------------------------ */
+    body {
+      display: grid;
+      grid-template-columns: 80px 400px 1fr 250px;
+      grid-template-rows: 80px 1fr;
+      
+      font-family: 'Rubik', sans-serif;
+      line-height: 1;
+      height: 100vh;
+      font-size: 24px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    nav,
+   
+    main,
+    aside {
+      padding-top: 24px;
+    }
+
+    nav {
+      background-color: #343a40;
+      grid-row: 1 / -1;
+      color: #fff;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      background-color: darksalmon;
+      grid-column: 2 / -1;
+      padding: 0 40px;
+      background-color: #7048e8;
+    }
+
+    section,
+    aside {
+      background-color: #e9ecef;
+    }
+
+    button {
+      font-size: 16px;
+      background-color: #5f3dc4;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      color: #fff;
+      padding: 8px 12px;
+    }
+
+    button:not(:last-child) {
+      margin-right: 12px;
+    }
+
+    button:last-child {
+      margin-left: auto;
+      background-color:lightcoral;
+    }
+    
+    h2 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+
+    section {
+      padding: 24px 40px 40px;
+      overflow-y: scroll;
+    }
+
+    section ul {
+      list-style: none;
+    }
+
+    section ul li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background-color: #adb5bd;
+      height: 96px;
+    }
+
+    section ul li:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    main {
+      
+    }
+
+    aside {
+     
+    }
+  </style>
+</head>
+
+<body>
+  <nav>Nav</nav>
+  <div class="menu">
+    <button>New</button>
+    <button>Reply</button>
+    <button>Forward</button>
+    <button>Mark as unread</button>
+    <button>Trash</button>
+  </div>
+  <section>
+    <h2>Letters</h2>
+    <ul>
+      <li>
+        Email 1
+      </li>
+      <li>
+        Email 2
+      </li>
+      <li>
+        Email 3
+      </li>
+      <li>
+        Email 4
+      </li>
+      <li>
+        Email 5
+      </li>
+      <li>
+        Email 6
+      </li>
+      <li>
+        Email 7
+      </li>
+      <li>
+        Email 8
+      </li>
+      <li>
+        Email 9
+      </li>
+      <li>
+        Email 10
+      </li>
+    </ul>
+  </section>
+  <main>Email view</main>
+  <aside>Aside</aside>
+</body>
+</html>
