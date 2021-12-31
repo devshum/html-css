@@ -62,6 +62,7 @@ body {
 .container {
   max-width: 130rem;
   margin: 0 auto;
+  padding: 0 3.2rem;
 }
 
 .heading-primary {
@@ -72,7 +73,6 @@ body {
   letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
 }
-
 
 .customers,
 .customers__list {
@@ -107,7 +107,6 @@ body {
 .customers__caption span {
   color: #cf711f;
 }
-
 
 .btn:link,
 .btn:visited {
@@ -146,10 +145,10 @@ body {
 
 .hero {
   background-color: #fdf2e9;
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 9.6rem 0;
 }
 
-.hero__container {
+.hero__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -165,4 +164,24 @@ body {
 .hero__img {
   display: block;
   width: 100%;
+}
+
+.header {
+  background-color: #fdf2e9;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 9.6rem;
+
+  padding: 0 3.2rem;
+}
+
+.header__logo {
+  height: 2.2rem;
+}
+
+.header__nav {
 }
