@@ -72,6 +72,23 @@ body {
   padding: 0 3.2rem;
 }
 
+.grid {
+  display: grid;
+  grid-gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .heading-primary {
   font-size: 5.2rem;
   font-weight: 700;
@@ -155,7 +172,7 @@ body {
   padding: 4.8rem 0 9.6rem 0;
 }
 
-.hero__wrapper {
+.hero__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -229,5 +246,10 @@ body {
 .header__nav-item a.nav-cta:hover,
 .header__nav-item a.nav-cta:active {
   background-color: #cf711f;
+}
+
+.works {
+  padding: 9.6rem 0;
+  background-color:rgb(255, 177, 177);
 }
 
