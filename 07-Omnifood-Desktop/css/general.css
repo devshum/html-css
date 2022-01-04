@@ -42,6 +42,7 @@ Paragaraph default: 1.6
 --- 06 BORDER-RADIUS
 
 Default: 9px
+Medium: 11px
 
 --- 07 WHITESPACE
 
@@ -70,6 +71,10 @@ body {
 
 .mr-sm {
   margin-right: 1.6rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .container {

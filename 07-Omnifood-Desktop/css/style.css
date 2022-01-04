@@ -193,6 +193,145 @@
   filter: brightness(0) opacity(50%);
 }
 
+.meals {
+  padding: 9.6rem 0;
+}
+
+.meals__product {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 1.1rem;
+  overflow: hidden;
+  transition: all .5s;
+}
+
+.meals__product:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+} 
+
+.meals__product-content {
+ padding: 3.2rem 4.8rem 4.8rem;
+}
+
+.meals__product-img {
+  width: 100%;
+}
+
+.meals__product-tags {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  grid-column-gap: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.meals__product-tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 3rem;
+  font-weight: 600;
+}
+
+.meals__product-tag--vegetarian {
+  background-color: #51cf66;
+}
+
+.meals__product-tag--vegan {
+  background-color: #94d32d;
+}
+
+.meals__product-tag--paleo {
+  background-color: #ffd43b;
+}
+
+.meals__product-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.meals__attributes-list {
+  list-style: none;
+}
+
+.meals__attributes-list li {
+  display: grid;
+  align-items: center;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  grid-column-gap: 0.8rem;
+
+  font-size: 1.8rem;
+}
+
+.meals__attributes-list strong {
+  font-weight: 500;
+}
+
+.meals__attributes-list li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.meals__icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
+
+.meals__diets {
+}
+
+.meals__diets-title {
+  list-style: none;
+}
+
+.meals__diets-list {
+  list-style: none;
+}
+
+.meals__diets-item {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  align-items: center;
+  grid-column-gap: 8px;
+
+  font-size: 1.8rem;
+}
+
+.meals__diets-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
+.meals__all-recipes {
+  text-align: center;
+}
+
+.meals__link:link,
+.meals__link:visited {
+  margin-top: 4.8rem;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #e67e22;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all .5s;
+}
+
+.meals__link:hover,
+.meals__link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
 
 
 
