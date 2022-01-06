@@ -90,6 +90,10 @@ body {
   grid-row-gap: 9.6rem;
 }
 
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
 .grid--center-v {
   align-items: center;
 }
@@ -179,4 +183,28 @@ body {
 .btn--outline:active {
   background-color: #fdf2e9;
   border: 1px solid #e67e22;
+}
+
+.meal-list {
+  list-style: none;
+}
+
+.meal-list__item {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  align-items: center;
+  grid-column-gap: 8px;
+
+  font-size: 1.8rem;
+}
+
+.meal-list__item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.meal-list__icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
 }
