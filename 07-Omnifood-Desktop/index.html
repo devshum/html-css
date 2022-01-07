@@ -364,7 +364,7 @@
           <h2 class="heading-secondary">Eating well without breaking the bank</h2>
         </header>
 
-        <div class="container grid grid--2-cols">
+        <div class="pricing__grid container grid grid--2-cols mb-md">
           <div class="pricing__plan pricing__plan--starter">
             <div class="pricing__plan-content">
               <p class="pricing__plan-name">Starter</p>
@@ -425,14 +425,32 @@
               <a href="#" class="btn btn--full">Start eating well</a>
             </div>
           </div>
+
+          <aside class="pricing__note">Prices include all applicable taxes. Users can cancel at any time.</aside>
         </div>
 
-        <div class="container grid grid--4-cols">
-          <div class="pricing__feature">Never cook again!: Our subscriptions cover 365 days per year, even including major holidays.</div>
-          <div>Local and organic: Our cooks only use local, fresh, and organic products to prepare your meals.</div>
-          <div>No waste: All our partners only use reusable containers to package all your meals.</div>
-          <div> Pause anytime: Going on vacation? Just pause your subscription, and we refund unused days.</div>
-        </div>
+        <ul class="pricing__feature-list container grid grid--4-cols">
+          <li class="pricing__feature">
+            <ion-icon class="pricing__feature-icon" name="infinite-outline"></ion-icon>
+            <h3 class="pricing__feature-title">Never cook again!</h3>
+            <p class="pricing__feature-paragraph">Our subscriptions cover 365 days per year, even including major holidays.</p>
+          </li>
+          <li class="pricing__feature">
+           <ion-icon class="pricing__feature-icon" name="nutrition-outline"></ion-icon>
+           <h3 class="pricing__feature-title">Local and organic</h3>
+           <p class="pricing__feature-paragraph">Our cooks only use local, fresh, and organic products to prepare your meals.</p>
+          </li>
+          <li class="pricing__feature">
+            <ion-icon class="pricing__feature-icon" name="leaf-outline"></ion-icon>
+            <h3 class="pricing__feature-title">No waste</h3>
+            <p class="pricing__feature-paragraph">All our partners only use reusable containers to package all your meals.</p>
+          </li>
+          <li class="pricing__feature">
+            <ion-icon class="pricing__feature-icon" name="pause-outline"></ion-icon>
+            <h3 class="pricing__feature-title">Pause anytime</h3>
+            <p class="pricing__feature-paragraph">Going on vacation? Just pause your subscription, and we refund unused days.</p>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
