@@ -14,7 +14,9 @@
 <body>
   <header class="header">
     <div class="header__wrapper">
-      <img class="header__logo" src="img/omnifood-logo.png" alt="logo">
+      <a href="#" class="header__logo-link">
+        <img class="logo" src="img/omnifood-logo.png" alt="logo">
+      </a>
 
       <nav class="header__nav">
         <ul class="header__nav-list">
@@ -365,10 +367,10 @@
         </header>
 
         <div class="pricing__grid container grid grid--2-cols mb-md">
-          <div class="pricing__plan pricing__plan--starter">
+          <article class="pricing__plan pricing__plan--starter">
             <div class="pricing__plan-content">
               <p class="pricing__plan-name">Starter</p>
-              <p class="pricing__plan-price"><span>$</span>399</p>
+              <h2 class="pricing__plan-price"><span>$</span>399</h2>
               <p class="pricing__plan-text">per month. That's just $13 per meal!</p>
             </div>
 
@@ -393,12 +395,12 @@
             <div class="pricing__btn">
               <a href="#" class="btn btn--full">Start eating well</a>
             </div>
-          </div>
+          </article>
 
-          <div class="pricing__plan pricing__plan--complete">
+          <article class="pricing__plan pricing__plan--complete">
             <div class="pricing__plan-content">
               <p class="pricing__plan-name">Complete</p>
-              <p class="pricing__plan-price"><span>$</span>649 </p>
+              <h2 class="pricing__plan-price"><span>$</span>649 </h2>
               <p class="pricing__plan-text">per month. That's just $11 per meal!</p>
             </div>
 
@@ -424,7 +426,7 @@
             <div class="pricing__btn">
               <a href="#" class="btn btn--full">Start eating well</a>
             </div>
-          </div>
+          </article>
 
           <aside class="pricing__note">Prices include all applicable taxes. Users can cancel at any time.</aside>
         </div>
@@ -499,6 +501,74 @@
     </section>
   </main>
 
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__logo-box">
+        <a href="#" class="footer__logo-link">
+          <img class="logo" src="img/omnifood-logo.png" alt="logo">
+        </a>
+
+        <ul class="footer__links-list">
+          <li><a class="footer__link" href="#"><ion-icon class="footer__social-icon" name="logo-instagram"></ion-icon></a></li>
+          <li><a class="footer__link" href="#"><ion-icon class="footer__social-icon" name="logo-twitter"></ion-icon></a></li>
+          <li><a class="footer__link" href="#"><ion-icon class="footer__social-icon" name="logo-facebook"></ion-icon></a></li>
+        </ul>
+
+        <p class="footer__copyright">Copyright &copy; 2027 by Omnifood, Inc. All rights reserved</p>
+      </div>
+
+      <div class="footer__address-box">
+        <p class="footer__heading">
+          Contact us
+        </p>
+        <address>
+          <p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+          <p>
+            <a class="footer__link" href="tel:415-201-6370">415-201-6370</a><br/>
+            <a class="footer__link" href="mailto:hello@omnifood.com">hello@omnifood.com</a>
+          </p>
+        </address>
+      </div>
+
+      <nav class="footer__nav">
+        <p class="footer__heading">
+          Account
+        </p>
+
+        <ul class="footer__nav-list">
+          <li><a class="footer__link" href="#">Create account</a></li>
+          <li><a class="footer__link" href="#">Sign in</a></li>
+          <li><a class="footer__link" href="#">iOS app</a></li>
+          <li><a class="footer__link" href="#">Android app</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__nav">
+        <p class="footer__heading">
+          Company
+        </p>
+
+        <ul class="footer__nav-list">
+          <li><a class="footer__link" href="#">About Omnifood</a></li>
+          <li><a class="footer__link" href="#">For Business</a></li>
+          <li><a class="footer__link" href="#">Cooking partners</a></li>
+          <li><a class="footer__link" href="#">Careers</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__nav">
+        <p class="footer__heading">
+          Resources
+        </p>
+
+        <ul class="footer__nav-list">
+          <li><a class="footer__link" href="#">Recipe directory</a></li>
+          <li><a class="footer__link" href="#">Help center</a></li>
+          <li><a class="footer__link" href="#">Privacy & terms</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
 </html>
