@@ -43,3 +43,58 @@
     padding: 9.6rem 3.2rem;
   }
 }
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero__container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    padding: 0 8rem;
+    grid-row-gap: 6.4rem;
+  }
+
+  .hero__img {
+    width: 60%;
+  }
+
+  .customers {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .featured__item img {
+    height: 2.4rem;
+  }
+
+  .works__number {
+    font-size: 7.4rem;
+  }
+
+  .testimonials__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials__gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .pricing__plan {
+    width: 100%;
+  }
+
+  .cta__content {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta__form {
+    grid-template-columns: 1fr;
+  }
+
+  .cta__form-btn {
+    margin-top: 1.5rem;
+  }
+}
