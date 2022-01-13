@@ -70,6 +70,10 @@ body {
   color: #555;
 }
 
+html.menu-opened {
+  overflow-y: hidden;
+}
+
 .mr-sm {
   margin-right: 1.6rem;
 }
