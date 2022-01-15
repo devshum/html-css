@@ -1,3 +1,35 @@
+const currentDateData = new Date().getFullYear();
+const dateDOM = document.querySelector('.date')
+
+dateDOM.textContent = currentDateData;
+
+const btnNavDOM = document.querySelector('.btn-mobile-nav');
+const headerDOM = document.querySelector('.header');
+
+btnNavDOM.addEventListener('click', () => headerDOM.classList.toggle('nav-open'))
+
+const allLinks = document.querySelectorAll('a:link')
+
+allLinks.forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const href = link.getAttribute('href')
+    console.log(href);
+  })
+})
+
+const sectionHeroDOM = document.querySelector('.section-hero')
+
+const observer = new IntersectionObserver(entries => {
+
+  const entry = entries[0]
+  console.log(entry.isIntersecting)
+}, {
+  root: null,
+  threshold: 0
+})
+
+observer.observe(sectionHeroDOM);
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
